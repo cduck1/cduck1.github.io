@@ -1,10 +1,10 @@
 body{
  text-align:center;
- font-family:Candara, Verdana, Calibri;
+ font-family:Verdana, Calibri;
  color:rgb(255,255,255);
- font-size:12px;
+ font-size:18px;
  background-color:rgb(30,30,30);
- width: 500px;
+ width: 800px;
  margin-left:auto;
  margin-right:auto;
 }
