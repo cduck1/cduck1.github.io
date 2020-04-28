@@ -1,9 +1,12 @@
 body{
  text-align:center;
-  font-family:Candara, Verdana, Calibri;
-  color:rgb(255,255,255);
-  font-size:12px;
-  background-color:rgb(30,30,30);  
+ font-family:Candara, Verdana, Calibri;
+ color:rgb(255,255,255);
+ font-size:12px;
+ background-color:rgb(30,30,30);
+ width: 500px;
+ margin-left:auto;
+ margin-right:auto;
 }
 
 img{
