@@ -13,7 +13,8 @@ body{
  width: 800px;
  margin-left:auto;
  margin-right:auto;
- line-height: 1.3
+ line-height: 1.3;
+ border: 20px solid aliceblue;
 }
 a{
  text-decoration: none;
