@@ -1,1 +1,38 @@
 <!DOCTYPE html>
+<style>
+  .green{
+   color : rgb(0,128,0); 
+  }
+  .white{
+   color: rgb(255,255,255); 
+  }
+  body{ 
+  font-family: Verdana, Calibri;
+  font-size: 18px;    
+  }
+</style>
+
+<title>Quiz</title>
+
+<h1>10 Question Quiz</h1>
+
+<p><strong id = "question">How tall is the Shard in meters?</strong></p>
+<input id="answer">
+<button id="button1">Submit answer</button>
+
+<script>
+score = 0;
+correct = ("310m") or ("") or ("") or ("") or ("") or ("") or ("") or ("") or ("") or ("");
+function question1() {
+  if (answer.value = correct){
+   score = score + 1
+   question.classList.add('green');
+   setTimeout(returncolor,100);
+  }
+}
+function returncolor {
+  question.classList.add('white');
+}
+button1.onclick = question1;
+answer.oninput = correct;
+</script>
