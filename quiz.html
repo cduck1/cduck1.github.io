@@ -59,6 +59,7 @@
 <p><strong id = "question">Who is the highest paid sports player?</strong></p>
 <input id="answer">
 <button id="button">Submit answer</button>
+<p>"Score: <span id = "endpoints">...</span>/10" </p>
 
 <script>
 score = 0;
@@ -66,9 +67,9 @@ correct = ("310m") or ("2.71m") or ("114 billion") or ("Ottawa") or ("Kingston")
 function allquestions() {
   if (answer.value = correct){
    score = score + 1
+   endpoints.textContent = score.value
    question.classList.add('green');
   }
 }
 button.onclick = allquestions;
-<p>"Score: "+ score +"/10" </p>
 </script>
