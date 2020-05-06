@@ -14,16 +14,18 @@
 
 <title>Quiz</title>
 
-<h1>10 Question Quiz</h1>
+<h1><u>10 Question Quiz</u></h1>
 
 <p><strong id = "question">How tall is the Shard in meters?</strong></p>
 <input id="answer">
-<button id="button1">Submit answer</button>
+<button id="button">Submit answer</button>
+<p>Score: + score +/10 </p>
+
 
 <script>
 score = 0;
 correct = ("310m") or ("") or ("") or ("") or ("") or ("") or ("") or ("") or ("") or ("");
-function question1() {
+function allquestions() {
   if (answer.value = correct){
    score = score + 1
    question.classList.add('green');
@@ -33,6 +35,5 @@ function question1() {
 function returncolor {
   question.classList.add('white');
 }
-button1.onclick = question1;
-answer.oninput = correct;
+button.onclick = allquestions;
 </script>
