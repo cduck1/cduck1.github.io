@@ -16,8 +16,8 @@
   }
 </style>
 
-var score = 0
-var correct = ("310m") or ("2.71m") or ("114 billion") or ("Ottawa") or ("Kingston") or ("Jeff Besoz") or ("7.6 billion") or ("Burj Khalifa") or ("The River Nile") or ("Messi");
+<var>score = 0</var>
+<var>correct = ("310m") or ("2.71m") or ("114 billion") or ("Ottawa") or ("Kingston") or ("Jeff Besoz") or ("7.6 billion") or ("Burj Khalifa") or ("The River Nile") or ("Messi")</var>
 
 <title>Quiz</title>
 
@@ -27,7 +27,7 @@ var correct = ("310m") or ("2.71m") or ("114 billion") or ("Ottawa") or ("Kingst
 <input id="answer">
 <button id="button">Submit answer</button>
 
-<p><strong id = "question">2. How was the tallest man to ever be recorded in meters?</strong></p>
+<p><strong id = "question">2. How tall was the tallest man to ever be recorded in meters?</strong></p>
 <input id="answer">
 <button id="button">Submit answer</button>
 
@@ -65,7 +65,7 @@ var correct = ("310m") or ("2.71m") or ("114 billion") or ("Ottawa") or ("Kingst
 <p>Score: <span id = "endpoints">...</span>/10! </p>
 
 <script>
-function allquestions() {
+function question1() {
   if (answer.value = correct){
    score = score + 1;
    endpoints.textContent = score.value;
