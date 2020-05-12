@@ -7,7 +7,7 @@
    color: rgb(250, 0, 0); 
   }
   body{ 
-    font-family: Verdana, Calibri;
+    font-family: Lato, Verdana, Calibri;
     font-size: 18px;
     text-align: center;
     width: 1000px;
@@ -65,7 +65,7 @@
 <script>
   function question1() {
 	score.textContent = '0';
-    if (answer1.value == "310"){
+    if (string.toLowercase(answer1.value) == "310"){
       idquestion1.classList.add('green');
 	  score.textContent = Number(score.textContent) + 1;
     } else {
