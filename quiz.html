@@ -65,7 +65,7 @@
 <script>
   function question1() {
 	score.textContent = '0';
-    if (string.toLowercase(answer1.value) == "310"){
+    if (answer1.value == "310"){
       idquestion1.classList.add('green');
 	  score.textContent = Number(score.textContent) + 1;
     } else {
@@ -89,7 +89,7 @@
       }
 }
   function question4() {
-    if (answer4.value == "Ottawa"){
+    if (string.toLowerCase(answer4.value) == "ottawa"){
       idquestion4.classList.add('green');
 	  score.textContent = Number(score.textContent) + 1;
     } else {
@@ -97,7 +97,7 @@
       }
 }
   function question5() {
-    if (answer5.value == "Kingston"){
+    if (string.toLowerCase(answer5.value) == "Kingston"){
       idquestion5.classList.add('green');
 	  score.textContent = Number(score.textContent) + 1;
     } else {
@@ -105,7 +105,7 @@
       }
 }
   function question6() {
-    if (answer6.value == "Jeff Besoz"){
+    if (string.toLowerCase(answer6.value) == "Jeff Besoz"){
       idquestion6.classList.add('green');
 	  score.textContent = Number(score.textContent) + 1;
     } else {
