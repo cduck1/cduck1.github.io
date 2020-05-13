@@ -24,7 +24,6 @@
 <title>Quiz</title>
 
 <h1><u>10 Question Quiz</u></h1>
-<strong>Just put in the value, units are not needed and will result in a wrong answer; e.g: 3 instead of 3m. Also, remember to capitalise!</strong>
 <p id = "idquestion1">1. How tall is the Shard?</p>
 <input id = "answer1"><span class = "units">m</span>
 <button id = "button1">Submit answer</button>
@@ -149,7 +148,7 @@
         idquestion10.classList.add('red');
       }
 }
-answer1.onchange = question1;
+button1.onclick = question1;
 button2.onclick = question2;
 button3.onclick = question3;
 button4.onclick = question4;
