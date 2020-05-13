@@ -20,3 +20,22 @@ a{
  text-decoration: none;
  color: lightblue
 }
+#bomb.after {
+  display: none;
+}
+
+#bomb.big {
+  font-size: 3em;
+}
+
+#bomb.bigger {
+  font-size: 4em;
+}
+
+#bomb.exploded .after {
+  display: inline;
+}
+
+#bomb.exploded .before {
+  display: none;
+}
