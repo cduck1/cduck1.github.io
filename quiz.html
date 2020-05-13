@@ -56,7 +56,7 @@
 <input id="answer8">
 <button id="button8">Submit answer</button>
 
-<p id = "idquestion9">9. What is the longest river in the world?</strong></p>
+<p id = "idquestion9">9. What is the longest river in the world's name in full?</strong></p>
 <input id="answer9">
 <button id="button9">Submit answer</button>
 
@@ -133,7 +133,7 @@
       }
 }
   function question9() {
-    if (answer9.value.toLowerCase() == "the river nile"||answer9.value.toLowerCase() == "nile"){
+    if (answer9.value.toLowerCase() == "the river nile"){
       idquestion9.classList.add('green');
 	  score.textContent = Number(score.textContent) + 1;
     } else {
