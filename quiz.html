@@ -56,6 +56,18 @@
 
 <p id = "idquestion11">11. How many days were there in the February of 2008?</p>
 <input id="answer11" type="range" min="1" max="31" step="1"><span id="rangedisplay">...</span>
+
+<p id = "idquestion12">12. What is the capital city of the Netherlands?</p>
+<label><input type="radio" name="city" value="Budapest">Budapest</label><br>
+<label><input type="radio" name="city" value="London" id="answer3">London</label><br>
+<label><input id = answer12 type="radio" name="city" value="Amsterdam">Amsterdam</label><br>
+
+<p id = "idquestion13">13. Who leaked highly classified information from the NSA in 2013?
+<select id = "answer13">
+	<option value="Gary McKinnon">Gary McKinnon</option>
+	<option value="Edward Snowden">Edward Snowden</option>
+	<option value="Kevin Mitnick">Kevin Mitnick</option>
+</select></p>
 <p><button id="mark">Mark Answers</button></p>
 <p><em>Score: <span id="score">...</span>/10</em></p>
 
@@ -127,7 +139,19 @@
 	  score.textContent = Number(score.textContent) + 1;
 	} else {
 		 idquestion11.classList.add('red');
-	  }	  
+	  }
+    if (answer12.checked){
+	  idquestion12.classList.add('green');
+	  score.textContent = Number(score.textContent) + 1;
+	} else {
+		 idquestion12.classList.add('red');
+	  }
+	if (answer13.value == "Edward Snowden"){
+	  idquestion13.classList.add('green');
+	  score.textContent = Number(score.textContent) + 1;
+	} else {
+		 idquestion13.classList.add('red');
+	  }
 }
 
   function rangecounter() {
