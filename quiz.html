@@ -67,11 +67,11 @@
 <p id = "idquestion11">11. How many days were there in the February of 2008?</p>
 <input id="answer11" type="range" min="1" max="31" step="1"><span id="rangedisplay">...</span>
 <button id="button11">Submit answer</button>
-
+<button id="mark">Mark Answers</button>
 <p><em>Score: <span id="score">...</span>/10</em></p>
 
 <script>
-  function question1() {
+function markall
 	score.textContent = '0';
     if (answer1.value == "310"){
       idquestion1.classList.add('green');
@@ -79,100 +79,71 @@
     } else {
         idquestion1.classList.add('red');
       }
-}
-  function question2() {
     if (answer2.value == "2.71"){
       idquestion2.classList.add('green');
 	  score.textContent = Number(score.textContent) + 1;
     } else {
         idquestion2.classList.add('red');
       }
-}
-  function question3() {
     if (answer3.value == "114"){
       idquestion3.classList.add('green');
 	  score.textContent = Number(score.textContent) + 1;
     } else {
         idquestion3.classList.add('red');
       }
-}
-  function question4() {
     if (answer4.value.toLowerCase() == "ottawa"){
       idquestion4.classList.add('green');
 	  score.textContent = Number(score.textContent) + 1;
     } else {
         idquestion4.classList.add('red');
       }
-}
-  function question5() {
     if (answer5.value.toLowerCase() == "kingston"){
       idquestion5.classList.add('green');
 	  score.textContent = Number(score.textContent) + 1;
     } else {
         idquestion5.classList.add('red');
       }
-}
-  function question6() {
     if (answer6.value.toLowerCase() == "jeff besoz"){
       idquestion6.classList.add('green');
 	  score.textContent = Number(score.textContent) + 1;
     } else {
         idquestion6.classList.add('red');
       }
-}
-  function question7() {
     if (answer7.value == "7.6"){
       idquestion7.classList.add('green');
 	  score.textContent = Number(score.textContent) + 1;
     } else {
         idquestion7.classList.add('red');
       }
-}
-  function question8() {
     if (answer8.value.toLowerCase() == "burj khalifa"){
       idquestion8.classList.add('green');
 	  score.textContent = Number(score.textContent) + 1;
     } else {
         idquestion8.classList.add('red');
       }
-}
-  function question9() {
     if (answer9.value.toLowerCase() == "the river nile"){
       idquestion9.classList.add('green');
 	  score.textContent = Number(score.textContent) + 1;
     } else {
         idquestion9.classList.add('red');
       }
-}
-  function question10() {
     if (answer10.value.toLowerCase() == "messi"){
       idquestion10.classList.add('green');
 	  score.textContent = Number(score.textContent) + 1;
     } else {
         idquestion10.classList.add('red');
       }
-}
-  function question11() {
 	if (answer11.value == "29"){
 	  idquestion11.classList.add('green');
 	  score.textContent = Number(score.textContent) + 1;
 	} else {
 		 idquestion11.classList.add('red');
-	  }
+	  }	  
 }
+
   function rangecounter() {
     rangedisplay.textContent = answer11.value;
 }
-button1.onclick = question1;
-button2.onclick = question2;
-button3.onclick = question3;
-button4.onclick = question4;
-button5.onclick = question5;
-button6.onclick = question6;
-button7.onclick = question7;
-button8.onclick = question8;
-button9.onclick = question9;
-button10.onclick = question10;
-button11.onclick = question11;
+mark.onclick = markall;
 answer11.oninput = rangecounter;
 </script>
