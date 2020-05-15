@@ -64,6 +64,10 @@
 <input id="answer10">
 <button id="button10">Submit answer</button>
 
+<p id = "idquestion11">11. How many days were there in the February of 2008?</p>
+<input id="answer11" type="range" min="1" max="31">
+<button id="button11">Submit answer</button>
+
 <p><em>Score: <span id="score">...</span>/10</em></p>
 
 <script>
@@ -148,6 +152,14 @@
         idquestion10.classList.add('red');
       }
 }
+  function question 11() {
+	if (answer11.value == "29"){
+	  idquestion11.classList.add('green');
+	  score.textContent = Number(score.textContent) + 1;
+	} else {
+		 idquestion11.classList.add('red');
+	  }
+}
 button1.onclick = question1;
 button2.onclick = question2;
 button3.onclick = question3;
@@ -158,4 +170,5 @@ button7.onclick = question7;
 button8.onclick = question8;
 button9.onclick = question9;
 button10.onclick = question10;
+button11.onclick = question11;
 </script>
