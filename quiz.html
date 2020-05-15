@@ -65,7 +65,7 @@
 <button id="button10">Submit answer</button>
 
 <p id = "idquestion11">11. How many days were there in the February of 2008?</p>
-<input id="answer11" type="range" min="1" max="31">
+<input id="answer11" type="range" min="1" max="31" step="1"><span id="rangedisplay">...</span>
 <button id="button11">Submit answer</button>
 
 <p><em>Score: <span id="score">...</span>/10</em></p>
@@ -160,6 +160,9 @@
 		 idquestion11.classList.add('red');
 	  }
 }
+  function rangecounter1() {
+    rangedisplay.textContent = answer11.value;
+}
 button1.onclick = question1;
 button2.onclick = question2;
 button3.onclick = question3;
@@ -171,4 +174,5 @@ button8.onclick = question8;
 button9.onclick = question9;
 button10.onclick = question10;
 button11.onclick = question11;
+answer11.oninput = rangecounter;
 </script>
